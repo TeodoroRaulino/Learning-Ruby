@@ -1,0 +1,25 @@
+#Gerando uma nova array com map
+array = [1, 2, 3, 4]
+
+puts "\n Executando .map multiplicando cada item por 2"
+
+new_array = array.map do |a|
+    a * 2
+end
+
+puts "\n Array Original"
+puts " #{array}"
+
+puts "\n Novo Array"
+puts " #{new_array}"
+
+#forçando a mudança de uma array existente com map
+puts "\n Executando .map multiplicando cada item por 2"
+# .map! foça que o conteúdo do aay original seja alterado
+array.map! do |a|
+    a * 2
+end
+
+puts "\n Array Original"
+puts " #{array}"
+puts ''
