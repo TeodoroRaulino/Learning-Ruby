@@ -1,7 +1,11 @@
 require "cpf_cnpj"
 
 def valid(v_cpf)
-    CPF.valid?(v_cpf)
+    if CPF.valid?(v_cpf)
+        return "valido"
+    else
+        return "invalido"
+    end
 end
 
 puts "Digite o número do seu CPF: "
