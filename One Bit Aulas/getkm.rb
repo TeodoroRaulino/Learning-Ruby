@@ -5,7 +5,7 @@ class Carro
     end
 
     private
-    
+
     def find_km(velo)
         /\d{2,}km\/h/.match(velo)
     end
